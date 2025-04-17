@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <title>Vivian's Website</title>
+    <style>
+        
+    h5 { 
+         color: #f3d969; 
+        }
+
+    h1 {
+     color: #a93a54;
+     }
+
+    h2 {
+         color: #4169e1;
+         }
+
+    h3 { 
+        color: #e2972d;
+     }
+
+    h6 { 
+
+        color: #57c289;
+     }
+        
+       
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        
+      
+        .header-content {
+            text-align: center;
+            padding: 20px 0;
+            background: url("image.css/bgp.jpg") no-repeat center center fixed;
+            background-size: cover;
+           
+        }
+        
+       
+        .cat-gifs {
+            text-align: center;
+            margin: 20px ;
+        }
+        
+        
+        .main-container {
+            max-width: 1200px;
+            padding:  40px;
+            margin:  auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(224, 118, 118, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        
+        .image-section {
+            width: calc(50% - 20px);
+        }
+        
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        
+        .accordion-menu {
+            width: calc(50% - 20px);
+        }
+        
+        .item {
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .title{
+            background-color: #802323 ;
+            display: flex;
+            color: #fff;
+            padding: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            align-items: center;
+            justify-content: space-between;    
+        }
+        
+        .title:hover {
+            background-color: #933f3f;
+        }
+        
+        .icon{
+            position: relative;
+            width: 14px;
+
+        }
+        
+        .icon::before, .icon::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            top: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .icon::after {
+            transform: rotate(90deg);
+        }
+        
+        .text {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .item:target .text {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .item:target .icon::after {
+            transform: rotate(0);
+        }
+        
+        
+        @media screen and (max-width: 960px) {
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .image-section,.accordion-menu {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    
+    <div class="header-content">
+        <h1>HELLO, I'm Vivian</h1>
+        <h2>This is a website where I can share my achievements OUO</h2>
+    </div>
+    
+    <div class="cat-gifs">
+        <img src="image.css/giphy.gif" alt="catmeme" height="60" width="60">
+        <img src="image.css/giphy.gif" alt="catmeme" height="60" width="60">
+        <img src="image.css/giphy.gif" alt="catmeme" height="60" width="60">
+        <img src="image.css/giphy.gif" alt="catmeme" height="60" width="60">
+    </div>
+    
+    <h3 style="text-align: center;">
+    Something I would like to say</h3> 
+
+    <h6 style="text-align: center;">
+        The achievements may not be important to others, but they have a special meaning to me.
+    </h6>
+    
+    
+    <div class="main-container">
+        <div class="image-section">
+            <img src="image.css/toge.jpg" alt="picture">
+        </div>
+        
+        <div class="accordion-menu">
+            <div class="item" id="item1">
+                <a href="#item1" class="title">
+                    <span>Information of the competition</span>
+                    <span class="icon"></span>
+                </a>
+            <div class="text">
+                <p><a href="http://www.chinaart.net/ms/tonghuatiandi/diqijiezuopin/xgd/" style="color: #4169e1;">Click me to go to the website of this competition!</a></p>
+                <p>This competition takes place in various Asian countries/cities, attracting massive teams and participants with creative, engaging challenges.</p>
+                <p>It's held yearly with fresh themes, ensuring innovation. Winning works are showcased across Asia, making it a standout event.</p>
+            </div>
+            </div>
+            
+            <div class="item" id="item2">
+                <a href="#item2" class="title">
+                    <span>Idea</span>
+                    <span class="icon"></span>
+                </a>
+                <div class="text">
+                    
+                   <p> The theme of the art competition was "Together"，a word brimming with warmth. So I envisioned a palette of softly saturated colors to echo the harmony between children across the strait, with playful, childlike interactions and a dreamy sense of floating in the air. To enrich the composition, I chose balloons,it means symbols of a vibrant childhood，and dolphins, representing the spanning waters between shores </p>
+                </div>
+            </div>
+            
+            <div class="item" id="item3">
+                <a href="#item3" class="title">
+                    <span>Material</span>
+                    <span class="icon"></span>
+                </a>
+                <div class="text">
+                    <p>This painting was completed in 2023 while I was practicing fine arts for the DSE.</p>
+                    <p>The entire piece was executed in acrylics, and to save time(because We want to preparing the DSE) I enhanced the details with colored pencils.</p>
+
+
+                </div>
+            </div>
+
+            <div class="item" id="item4">
+                <a href="#item4" class="title">
+                    <span>My other art  works! & MY hobbit</span>
+                    <span class="icon"></span>      
+                </a>
+                <div class="text">
+                    <p><a href="https://octopus0418.github.io/octartwork.github.io/" style="color: #4169e1;">click here to view a small selection of my artwork from 2025 so far!</a></p>
+                    <p>You can have a look if you want to know more about me , it's obvious that I likes animationQuQ</p>
+                    <p>I think painting is also an achievement in my life very least, it keeps my days from being dull, always filled with color.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
